@@ -239,7 +239,7 @@ color: #333;
   
   .social-buttons a:hover i{
     background: linear-gradient(45deg,#22a6b3,#30336b);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
     transform: scale(2.2);
   }
@@ -247,12 +247,13 @@ color: #333;
   .section-footer{
       background:var(#36d1dc);
       color: #fff;
-      padding: 4rem 0;
+      padding: 2rem 0;
   }
 
   .section-footer .container {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      grid-gap:1rem;
   }
 
   .section-footer h3{
@@ -263,4 +264,73 @@ color: #333;
   .section-footer{
       line-height: 1.9;
       
+  }
+
+
+  .email-form {
+      width: 100%;
+      display:inline-block;
+      background-color:#36d1dc;
+      position:relative;
+      border-radius: 20px;
+      line-height: 0;
+      margin-top: 1rem;
+  }
+  .email-form .form-control{
+      display: inline-block;
+      border: 0;
+      outline: 0;
+      font-size: 1rem;
+      color: #ddd;
+      /* background-color: transparent; */
+      font-family:inherit;
+      margin: 0;
+      padding: 0 3rem 0 1.5rem;
+      width: 100%;
+      height: 45px;
+      border-radius: 20px;
+  }
+
+  .email-form .submit {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45px;
+      height: 45px;
+      background-color: #fff;
+      font-size: 1 rem;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      border:0;
+      color:#5b86e5;
+      cursor: pointer;
+      border-radius: 0 20px 20px 0;
+  }
+
+  @media(max-width:700px){
+      .section-a .container{
+          grid-template-columns: 1 fr;
+          text-align: center;
+      }
+
+      .section-a .container div:first-child {
+          order: 2;
+      }
+
+      .section-a .container div:last-child {
+          order: -1;
+      }
+
+      .section-a img {
+         width: 80%;
+         margin : auto; 
+      }
+
+      .section-footer .container {
+          grid-template-columns: 1fr;
+          text-align: center;
+      }
   }
