@@ -7,6 +7,7 @@
     <title>Wonderlist App</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     </head>
@@ -31,15 +32,89 @@
                     <p> Plenty of people use a pen and paper for the job without any problem. 
                         And yet a new to-do list app seems to come out every day. Why? Because keeping track of your tasks is an intensely personal thing.
                         To that end, Wunderlist came along as a simple application to keep the tracking activity simple, fast,sync and ready to use.</p>
-                        <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Read More</a>  
+                        <!-- <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Read More</a>   -->
                 </div>
                 <img src="design-files/todo list 8.png" alt="">
             </div>
         </section>
         <section class="section-b">
-            <div class="todo list">      
+            <div class="container">   
+              <div class="section-b-inner">
+                  <h1>Wunderlist interface</h1>
+                  <p>As you see wunderlist interface its simple, friendly app to use. You can add & delete a task without moving to another screen.
+                    Simple it helps you to create and delete a task list. All these actions can be easily using the same screen, in a clear and clean process.</p>
+              </div> 
+              <div class="Todo List">
+                <h2>What are you planning today?</h2>
+                <label class="task">
+                <input type="checkbox">
+                <i class="fa fa-check"></i>
+                <span class="text">Shopping Therapy</span>
+                </label>
+            
+                <label class="task">
+                    <input type="checkbox">
+                    <i class="fa fa-check"></i>
+                    <span class="text">Talking kids from school</span>
+                </label>
+            
+                <label class="task">
+                    <input type="checkbox">
+                    <i class="fa fa-check"></i>
+                    <span class="text">Go to the cinema</span>
+                </label>
+            
+                <label class="task">
+                    <input type="checkbox">
+                    <i class="fa fa-check"></i>
+                    <span class="text">Go to work</span>
+                </label>
+            </div>
+            </div>   
             </div>
         </section>
+
+        <footer class="section-footer">
+            <div class="container">
+                <div>
+                    <h2>You can find us</h2>
+                    <div class="social-buttons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                      </div>
+                </div>
+                <h3>Company Info</h3>
+                <ul>
+                    <li><a href="#">Wunderlist App</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Subscribe</h3>
+                <p>Wunderlist is the tool of tomorrow</p>
+                <form name"email-form" method+"POST" data-netlify="true">
+                    <div class="email-form">
+                        <span class="form-control-wrap">
+                            <input 
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            size="40"
+                            class="form-control"
+                            placeholder="Email"
+                            />
+                        </span>
+                        <button type="submit" class="form-control submit">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </footer>
+
         
        
         

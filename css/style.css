@@ -91,7 +91,7 @@ color: #333;
     grid-gap: 2rem;
     align-items: center;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
     
 }
 
@@ -101,11 +101,17 @@ color: #333;
 }
 
 .section-a p {
-    margin: 2rem;
-    position: relative;
+    margin: 1rem 0;
+    /* position: relative; */
     display: flex;
     margin-bottom: 70px;
 }
+
+.section-a .container a:first-child {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
 
 .btn {
     display: inline-block;
@@ -122,6 +128,139 @@ color: #333;
     background: var(#5b86e5);
 }
 
+.section-b {
+    margin: 2rem 0;
+}
 
-/* todo list */
+.section-b .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.section-b h1{
+    font-size: 3rem;
+     color: var(#5b86e5);
+}
 
+.section-b p {
+    margin: 1rem 0;
+    /* position: relative; */
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .task-list{
+    width: 400px;
+    padding: 40px;
+  }
+  .task-list h2{
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .task{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .task input{
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  .task i{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 48px;
+    font-size: 20px;
+    margin-right: 14px;
+    color: transparent;
+  }
+  
+  .text{
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .task input:checked ~ i{
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .task input:checked ~ .text{
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.7);
+  }
+ 
+  .social-buttons a{
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 8px;
+  }
+  
+  .social-buttons a::before{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg,#22a6b3,#30336b);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.3s ease-in;
+  }
+  
+  .social-buttons a:hover::before{
+    transform: scale(0);
+  }
+  
+  .social-buttons a i{
+    transition: 0.3s ease-in;
+  }
+  
+  .social-buttons a:hover i{
+    background: linear-gradient(45deg,#22a6b3,#30336b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(2.2);
+  }
+  
+  .section-footer{
+      background:var(#36d1dc);
+      color: #fff;
+      padding: 4rem 0;
+  }
+
+  .section-footer .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+  }
+
+  .section-footer h3{
+      font-size: 2rem;
+      margin-bottom: 1rem;
+  }
+
+  .section-footer{
+      line-height: 1.9;
+      
+  }
